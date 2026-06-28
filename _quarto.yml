@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "包增春律师 | Lawyer Zengchun Bao"
+  site-url: "https://LawyerZengchunBao.github.io"
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: 首页
+      - href: profile.qmd
+        text: 专业简介
+      - href: honors.qmd
+        text: 荣誉与职务
+      - href: experience.qmd
+        text: 代表经历
+      - href: publications.qmd
+        text: 媒体与文章
+      - href: contact.qmd
+        text: 联系方式
+    right:
+      - href: contact.qmd
+        text: 联系咨询
+  page-footer:
+    left: "© 包增春律师"
+    right: "安徽云旗律师事务所合伙人"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    code-tools: false
+execute:
+  freeze: auto
